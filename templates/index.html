@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,43 +6,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="img/logo (2).png" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static "img/logo (2).png" %}" type="image/x-icon">
   <title>faracode team | تیم فراکد</title>
   <!-- rtl -->
-  <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="{% static "css/bootstrap-rtl.min.css" %}">
   <!-- main css -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="{% static "css/main.css" %}">
   <!-- font icon -->
-  <link rel="stylesheet" href="font-icon/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static "font-icon/css/font-awesome.min.css" %}">
 
 
   <!-- font awesome -->
-  <script src="js/all.js"></script>
-
-  <style>
-  </style>
+  <script src="{% static "js/all.js" %}"></script>
 </head>
 
 <body>
-  <!-- preloader -->
-  <div class="preloader d-flex align-items-center justify-content-center">
-    <img src="img/preloader.gif" alt="preloader">
-  </div>
-  <!-- end preloader -->
-  <!-- welcome message -->
-  <div class="intro">
-    <h1 class="logo-header">
-      <div class="logo">به وبسایت ما</div>
-      <div class="logo">خوش اومدین</div>
-    </h1>
-  </div>
-  <!-- end welcome message -->
   <!-- start nav -->
   <section class="nav-head section">
     <nav class="navbar navbar-expand-md container">
       <!-- nav brand -->
       <a href="#" class="navbar-brand font-weight-bold">
-        <img src="img/logo (2).png" alt="">
+        <img src="{% static "img/logo (2).png" %}" alt="">
         فراکد
       </a>
       <!-- end nav brand -->
@@ -83,7 +68,8 @@
                     <input type="text" class="form-control my-2 form-box" placeholder="موضوع..." id="InputName">
                     <textarea name="body" id="message" class="my-2 w-100 form-box" placeholder="پیام..."></textarea>
                     <div class="w-100 text-center">
-                    </div>
+                  </div>
+                </form>  
                     <div class="modal-footer">
                       <button type="button" class="btn message-btn">ارسال پیام </button>
                     </div>
@@ -119,7 +105,7 @@
           </div>
         </div>
         <div class="col-md-10 col-lg-6">
-          <img src="img/img3.png" alt="img" class="img-fluid header-img">
+          <img src="{% static "img/img3.png" %}" alt="img" class="img-fluid header-img">
         </div>
       </div>
     </div>
@@ -147,7 +133,7 @@
       <!-- single activity -->
       <div class="col-12 col-md-6 col-lg-3 py-3">
         <div class="activity-img py-3">
-          <img src="img/f1.svg" alt="img-f1">
+          <img src="{% static "img/f1.svg" %}" alt="img-f1">
         </div>
         <h5 class="activity-name">برنامه ریزی و هدف گذاری</h5>
         <p class="activity-text">برای بهبود اوضاع کسب و کار شما و تحقق اهدافتون برنامه داریم.</p>
@@ -155,7 +141,7 @@
       <!-- single activity -->
       <div class="col-12 col-md-6 col-lg-3 py-3">
         <div class="activity-img py-3">
-          <img src="img/f2.svg" alt="img-f1">
+          <img src="{% static "img/f2.svg" %}" alt="img-f1">
         </div>
         <h5 class="activity-name">پشتیبانی اختصاصی</h5>
         <p class="activity-text">از زمان شروع همکاری تا همیشه در کنار شما هستیم و مشکلات و سوالات شما رو برطرف میکنیم.
@@ -164,7 +150,7 @@
       <!-- single activity -->
       <div class="col-12 col-md-6 col-lg-3 py-3">
         <div class="activity-img py-3">
-          <img src="img/f4.svg" alt="img-f1">
+          <img src="{% static "img/f4.svg" %}" alt="img-f1">
         </div>
         <h5 class="activity-name">ایده های خلاقانه و بی نظیر</h5>
         <p class="activity-text">تیم ما به شما کمک میکنه ایده های خودتون رو به واقعیت تبدیل کنید.</p>
@@ -172,7 +158,7 @@
       <!-- single activity -->
       <div class="col-12 col-md-6 col-lg-3 py-3">
         <div class="activity-img py-3">
-          <img src="img/f3.svg" alt="img-f1">
+          <img src="{% static "img/f3.svg" %}" alt="img-f1">
         </div>
         <h5 class="activity-name">طراحی زیبا و مدرن</h5>
         <p class="activity-text">یک طراحی زیبا و منحصربفرد به شما کمک میکنه که بهتر دیده بشید!</p>
@@ -185,7 +171,7 @@
   <section class="about-us container section" id="about-us">
     <div class="row">
       <div class="col-12 col-lg-6 ssss">
-        <img src="img/digital-1.png" alt="img" class="img-fluid">
+        <img src="{% static "img/digital-1.png" %}" alt="img" class="img-fluid">
       </div>
       <div class="col-12 col-lg-6 py-4 pt-lg-0">
         <span class="d-inline-block rounded font-weight-bold activity-info my-2">مسئولیت پذیری و وقت شناسی</span>
@@ -197,19 +183,19 @@
         </p>
         <div class="row">
           <div class="col-12 col-md-6 d-flex py-2">
-            <img src="img/feature-1.svg" alt="img" class="feature-img pl-2">
+            <img src="{% static "img/feature-1.svg" %}" alt="img" class="feature-img pl-2">
             <h6 class="about-text font-weight-bold">همیشه پاسخگو</h6>
           </div>
           <div class="col-12 col-md-6 d-flex py-2">
-            <img src="img/feature-2.svg" alt="img" class="feature-img pl-2">
+            <img src="{% static "img/feature-2.svg" %}" alt="img" class="feature-img pl-2">
             <h6 class="about-text font-weight-bold">طراحی مدرن و تمیز</h6>
           </div>
           <div class="col-12 col-md-6 d-flex py-2">
-            <img src="img/feature-3.svg" alt="img" class="feature-img pl-2">
+            <img src="{% static "img/feature-3.svg" %}" alt="img" class="feature-img pl-2">
             <h6 class="about-text font-weight-bold">تست روی چند دستگاه</h6>
           </div>
           <div class="col-12 col-md-6 d-flex py-2">
-            <img src="img/feature-4.svg" alt="img" class="feature-img pl-2">
+            <img src="{% static "img/feature-4.svg" %}" alt="img" class="feature-img pl-2">
             <h6 class="about-text font-weight-bold">تجربه کاربری عالی</h6>
           </div>
         </div>
@@ -230,7 +216,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-4 d-flex align-items-center justify-content-center gallery-img">
         <div class="img-pro">
           <div class="addition">
-            <img src="img/project1.jpg" alt="" class="img-fluid pro-photo ">
+            <img src="{% static "img/project1.jpg" %}" alt="" class="img-fluid pro-photo ">
               <i class="fas fa-search pro-link"></i>
           </div>
           <div class="py-2 pro-name-activity w-100 text-center">
@@ -244,7 +230,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-4 d-flex align-items-center justify-content-center gallery-img">
         <div class="img-pro">
           <div class="addition">
-            <img src="img/project1.jpg" alt="" class="img-fluid pro-photo ">
+            <img src="{% static "img/project1.jpg" %}" alt="" class="img-fluid pro-photo ">
             <i class="fas fa-search pro-link"></i>
           </div>
           <div class="py-2 pro-name-activity w-100 text-center">
@@ -258,7 +244,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-4 d-flex align-items-center justify-content-center gallery-img">
         <div class="img-pro">
           <div class="addition">
-            <img src="img/project1.jpg" alt="" class="img-fluid pro-photo ">
+            <img src="{% static "img/project1.jpg" %}" alt="" class="img-fluid pro-photo ">
             <i class="fas fa-search pro-link"></i>
           </div>
           <div class="py-2 pro-name-activity w-100 text-center">
@@ -272,7 +258,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-4 d-flex align-items-center justify-content-center gallery-img">
         <div class="img-pro">
           <div class="addition">
-            <img src="img/project1.jpg" alt="" class="img-fluid pro-photo ">
+            <img src="{% static "img/project1.jpg" %}" alt="" class="img-fluid pro-photo ">
             <i class="fas fa-search pro-link"></i>
           </div>
           <div class="py-2 pro-name-activity w-100 text-center">
@@ -286,7 +272,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-4 d-flex align-items-center justify-content-center gallery-img">
         <div class="img-pro">
           <div class="addition">
-            <img src="img/project1.jpg" alt="" class="img-fluid pro-photo ">
+            <img src="{% static "img/project1.jpg" %}" alt="" class="img-fluid pro-photo ">
             <i class="fas fa-search pro-link"></i>
           </div>
           <div class="py-2 pro-name-activity w-100 text-center">
@@ -300,7 +286,7 @@
       <div class="col-12 col-md-6 col-lg-4 py-4 d-flex align-items-center justify-content-center gallery-img">
         <div class="img-pro">
           <div class="addition">
-            <img src="img/project1.jpg" alt="" class="img-fluid pro-photo ">
+            <img src="{% static "img/project1.jpg" %}" alt="" class="img-fluid pro-photo ">
             <i class="fas fa-search pro-link"></i>
           </div>
           <div class="py-2 pro-name-activity w-100 text-center">
@@ -331,7 +317,7 @@
       <div class="slide next">
         <i class="fas fa-angle-right"></i>
       </div>
-      <img src="img/futfinal.jpg" alt="">
+      <img src="{% static "img/futfinal.jpg" %}" alt="">
     </div>
   </div>
 
@@ -370,7 +356,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        <img src="img/video-bg.jpg" alt="video-bg" class="img-fluid video-bg">
+        <img src="{% static "img/video-bg.jpg" %}" alt="video-bg" class="img-fluid video-bg">
         <div class="video-icon">
           <div class="btn video-btn" onclick="playvideo()" id="videobtn">
             <i class="fa fa-play"></i>
@@ -379,9 +365,9 @@
         <!-- video -->
         <div class="video">
           <video width="100%" id="myVideo" controls loop autoplay>
-            <source src="video/video1.mp4" type="video/mp4">
+            <source src="{% static "video/video1.mp4" %}" type="video/mp4">
           </video>
-          <img src="img/close.png" class="close-btn" onclick="stopPlayer()" alt="">
+          <img src="{% static "img/close.png" %}" class="close-btn" onclick="stopPlayer()" alt="">
         </div>
         <!-- end video -->
       </div>
@@ -396,7 +382,7 @@
       <!-- single option -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
         <div class="img-option rounded">
-          <img src="img/1.png" alt="optionimg" class="img-fluid rounded position-relative">
+          <img src="{% static "img/1.png" %}" alt="optionimg" class="img-fluid rounded position-relative">
         </div>
         <div class="option-text w-75 py-3 pr-3">
           مشاوره و راهنمایی
@@ -405,7 +391,7 @@
       <!-- single option -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
         <div class="img-option rounded">
-          <img src="img/2.png" alt="optionimg" class="img-fluid rounded position-relative">
+          <img src="{% static "img/2.png" %}" alt="optionimg" class="img-fluid rounded position-relative">
         </div>
         <div class="option-text w-75 py-3 pr-3">
           بررسی نیاز و پیش بینی نیاز بازار
@@ -414,7 +400,7 @@
       <!-- single option -->
       <div class="col-12 col-md-6 col-lg-4 my-2">
         <div class="img-option rounded">
-          <img src="img/3.png" alt="optionimg" class="img-fluid rounded position-relative">
+          <img src="{% static "img/3.png" %}" alt="optionimg" class="img-fluid rounded position-relative">
         </div>
         <div class="option-text w-75 py-3 pr-3">
           بررسی نقاط قوت و ضعف شما
@@ -429,7 +415,7 @@
       <div class="item-opt">
         <div class="opt my-2">
           <div class=" wrapper">
-            <img src="img/3.png" alt="option" class="img-fluid">
+            <img src="{% static "img/3.png" %}" alt="option" class="img-fluid">
             <div class="title-opt text-center">
               بررسی نقاط قوت و ضعف شما
             </div>
@@ -440,7 +426,7 @@
       <div class="item-opt">
         <div class="opt my-2">
           <div class=" wrapper">
-            <img src="img/2.png" alt="option" class="img-fluid">
+            <img src="{% static "img/2.png" %}" alt="option" class="img-fluid">
             <div class="title-opt text-center">
               بررسی نیاز و پیش بینی نیاز بازار
             </div>
@@ -451,7 +437,7 @@
       <div class="item-opt ">
         <div class="opt my-2">
           <div class=" wrapper">
-            <img src="img/1.png" alt="option" class="img-fluid">
+            <img src="{% static "img/1.png" %}" alt="option" class="img-fluid">
             <div class="title-opt text-center">
               مشاوره و راهنمایی
             </div>
@@ -482,7 +468,7 @@
           <div class="row">
             <!-- single box -->
             <div class="col-12 col-md-6 d-flex introduce-box rounded py-4 my-2">
-              <img src="img/f1 (1).svg" alt="img" class="pl-3 introduce-img">
+              <img src="{% static "img/f1 (1).svg" %}" alt="img" class="pl-3 introduce-img">
               <div class="">
                 <h3 class="introduce-box-title">سریع و با کیفیت</h3>
                 <p class="introduce-box-text">در سریع ترین زمان ممکن و با بالاترین کیفیت پروژه خود را تحویل بگیرید.</p>
@@ -491,7 +477,7 @@
             <!-- end sigle box -->
             <!-- single box -->
             <div class="col-12 col-md-6 d-flex introduce-box rounded py-4 my-2">
-              <img src="img/f4 (1).svg" alt="img" class="pl-3 introduce-img">
+              <img src="{% static "img/f4 (1).svg" %}" alt="img" class="pl-3 introduce-img">
               <div class="">
                 <h3 class="introduce-box-title">مشاوره و راهنمایی</h3>
                 <p class="introduce-box-text">تجربیات و دانش خود را در زمینه ی بازاریابی در اختیار شما قرار میدهیم</p>
@@ -500,7 +486,7 @@
             <!-- end sigle box -->
             <!-- single box -->
             <div class="col-12 col-md-6 d-flex introduce-box rounded py-4 my-2">
-              <img src="img/f2 (1).svg" alt="img" class="pl-3 introduce-img">
+              <img src="{% static "img/f2 (1).svg" %}" alt="img" class="pl-3 introduce-img">
               <div class="">
                 <h3 class="introduce-box-title">بدون محدودیت زمانی و مکانی</h3>
                 <p class="introduce-box-text">در هر زمان و در هرمکان میتوانید از خدمات تیم ما استفاده کنید.</p>
@@ -509,7 +495,7 @@
             <!-- end sigle box -->
             <!-- single box -->
             <div class="col-12 col-md-6 d-flex introduce-box rounded py-4 my-2">
-              <img src="img/f5.svg" alt="img" class="pl-3 introduce-img">
+              <img src="{% static "img/f5.svg" %}" alt="img" class="pl-3 introduce-img">
               <div class="">
                 <h3 class="introduce-box-title">توجه به درخواست شما</h3>
                 <p class="introduce-box-text">تمامی درخواست شما شما را به دقت بررسی کرده و در پروژه ی شما پیاده میکنیم.
@@ -519,7 +505,7 @@
             <!-- end sigle box -->
             <!-- single box -->
             <div class="col-12 col-md-6 d-flex introduce-box rounded py-4 my-2">
-              <img src="img/f3 (1).svg" alt="img" class="pl-3 introduce-img">
+              <img src="{% static "img/f3 (1).svg" %}" alt="img" class="pl-3 introduce-img">
               <div class="">
                 <h3 class="introduce-box-title">پشتبانی نامحدود</h3>
                 <p class="introduce-box-text">از آغاز تا پایان در کنار شما پاسخگوی سوالات و مشکلات شما هستیم.</p>
@@ -528,7 +514,7 @@
             <!-- end sigle box -->
             <!-- single box -->
             <div class="col-12 col-md-6 d-flex introduce-box rounded py-4 my-2">
-              <img src="img/f6.svg" alt="img" class="pl-3 img-fluid introduce-img">
+              <img src="{% static "img/f6.svg" %}" alt="img" class="pl-3 img-fluid introduce-img">
               <div class="">
                 <h3 class="introduce-box-title">سریع و با کیفیت</h3>
                 <p class="introduce-box-text">در سریع ترین زمان ممکن و با بالاترین کیفیت پروژه خود را تحویل بگیرید.</p>
@@ -559,7 +545,7 @@
     </div>
     <div class="row my-5">
       <div class="col-12 col-lg-6">
-        <img src="img/digital-2.png" alt="img" class="img-fluid">
+        <img src="{% static "img/digital-2.png" %}" alt="img" class="img-fluid">
       </div>
       <!--form  -->
       <div class="col-12 col-lg-6">
@@ -586,7 +572,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-12 col-md-4 d-flex">
           <a href="#" class="font-weight-bold footer-brand">
-            <img src="img/logo (2).png" alt="logo">فراکد
+            <img src="{% static "img/logo (2).png" %}" alt="logo">فراکد
           </a>
         </div>
         <div class="col-12 col-md-4 my-4 my-md-0">
@@ -634,13 +620,13 @@
   <!-- end progress bar -->
 
   <!-- jquery -->
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
   <!-- script js -->
-  <script src="js/script.js"></script>
+  <script src="{% static "js/script.js" %}"></script>
   <!-- dropdown -->
-  <script src="dropdown/dropdown.js"></script>
+  <script src="{% static "dropdown/dropdown.js" %}"></script>
 </body>
 
 </html>
