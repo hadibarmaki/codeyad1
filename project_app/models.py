@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Project(models.model):
+class Project(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=150)
     address = models.CharField(max_length=150)
