@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # my apps
     'project_app.apps.ProjectAppConfig',
+    'contactus_app.apps.ContactusAppConfig',
 ]
 
 MIDDLEWARE = [

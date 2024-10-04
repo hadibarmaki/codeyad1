@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  {% include "include/header.html" %}
+{% include "include/header.html" %}
 </head>
 
 <body>
@@ -494,17 +494,17 @@
         <div class="col-12 col-md-4 my-4 my-md-0">
           <p class="footer-text">مارا در شبکه های اجتماعی دنبال کنید</p>
           <div class="footer-icons">
-            <a href="https://instagram.com/faracodeteam"><i class="fab fa-instagram footer-icon" title="Instagram"></i></a>
-            <a href="https://te.me/@Samancfu"><i class="fab fa-telegram footer-icon" title="Telegram"></i></a>
-            <a href="https://wa.me/+989910549803"><i class="fab fa-whatsapp footer-icon" title="Whatsapp"></i></a>
+            <a href="{{ conect.instagram }}"><i class="fab fa-instagram footer-icon" title="Instagram"></i></a>
+            <a href="{{ contact.telegram }}"><i class="fab fa-telegram footer-icon" title="Telegram"></i></a>
+            <a href="{{ contact.whatsapp }}"><i class="fab fa-whatsapp footer-icon" title="Whatsapp"></i></a>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <h3 class="footer-title">تماس با ما</h3>
-          <p class="footer-text">آدرس پستی:اهواز، کیان آباد</p>
-          <p class="footer-text">کیان آباد</p>
-          <p class="footer-text">91232424223+</p>
-          <p class="footer-email">faracodeteam@gmail.com</p>
+          <p class="footer-text">آدرس پستی: {{ contact.address }}</p>
+          <p class="footer-text">{{ contact.city }}</p>
+          <p class="footer-text">{{ contact.phone }}</p>
+          <p class="footer-email">{{ contact.email }}</p>
         </div>
       </div>
     </div>
