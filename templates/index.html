@@ -30,6 +30,21 @@
           <a class="nav-link nav-item pr-3 projects" data-text="پروژه ها" href="#projects">پروژه ها</a>
           <a class="nav-link nav-item pr-3 options d-md-none" data-text="خدمات" href="#options"> خدمات</a>
           <a class="nav-link nav-item pr-3 conect" data-text="تماس با ما" href="#conect"> تماس با ما</a>
+          {% if request.user.is_authenticated %}
+          <div class="d-flex">
+            {% if request.user.first_name %}
+            <a class="nav-link nav-item pr-3 conect"  href="">{{ request.user.first_name }}</a>
+            {% else %}
+            <a class="nav-link nav-item pr-3 conect"  href="">{{ request.user.username }}</a>
+            {% endif %}
+            <a href="/logout"><span class="badge badge-danger mt-2">logout</span></a>
+          </div>
+          {% else %}
+          <div class="d-flex">
+            <a class="nav-link" href="/login">login</a><span class="mt-2">/</span>
+            <a class="nav-link" href="">register</a>
+          </div>
+          {% endif %}
         </ul>
         <!-- login -->
         <button type="button" class="btn login-btn animate-btn" data-toggle="modal" data-target="#exampleModal">پروژه ای
