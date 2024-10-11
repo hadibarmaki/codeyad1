@@ -22,3 +22,22 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('/')
+
+
+
+def user_register(request):
+    context = {"errors": []}
+    if request.user.is_authenticated == True:
+        return redirect('/')
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password1 = request.POST.get('password1')
+        password2 = request.POST.get('password2')
+        if password1 != password2:
+            context['errors'].append('passwords are not same')
+            return render(request, 'account/register.html', context)
+        user = User.objects.create(username=username, email=email, password=password1)
+        login(request, user)
+        return redirect('/')
+    return render(request, 'account/register.html')
